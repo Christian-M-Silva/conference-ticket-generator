@@ -2,6 +2,8 @@
 *.sketch
 *.fig
 *.xd
+*.docx
+*.tmp
 
 # Dependencies
 /node_modules
