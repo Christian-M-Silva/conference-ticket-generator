@@ -57,6 +57,7 @@ Mobile Landscape![](Screenshot/Mobile-landscape-one.PNG) ![](Screenshot/Mobile-l
 
 ### Built with
 
+- NodeJS V21.1.0
 - Tasks
 - Usadas
 - No
