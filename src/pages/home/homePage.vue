@@ -8,7 +8,22 @@
     <span class="text-[1.4rem] text-slate-300"
       >Secure your spot at next year´s biggest coding conference</span
     >
-    <form class="mt-11" action="">Formulario</form>
+    <form class="mt-11 flex flex-col" action="">
+
+      <label for="upload-avatar">Upload Avatar</label>
+      <input type="file" name="upload-avatar" id="upload-avatar">
+    
+      <label for="full-name">Full Name</label>
+      <input type="text" name="full-name" id="full-name">
+      
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email">
+
+      <label for="github">Github Username</label>
+      <input type="text" name="github" id="github">
+
+      <button class="mt-5" type="submit">Generate My Ticket</button>
+    </form>
   </div>
 </template>
 <script src="./home.ts"></script>
