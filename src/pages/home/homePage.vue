@@ -12,6 +12,7 @@
 
       <label for="upload-avatar">Upload Avatar</label>
       <input type="file" name="upload-avatar" id="upload-avatar">
+      <span></span>
     
       <label for="full-name">Full Name</label>
       <input type="text" name="full-name" id="full-name">
