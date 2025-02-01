@@ -9,18 +9,29 @@
       >Secure your spot at next year´s biggest coding conference</span
     >
     <form class="mt-11 flex flex-col" action="">
-
       <label for="upload-avatar">Upload Avatar</label>
-      <input type="file" name="upload-avatar" id="upload-avatar">
-    
+      <input
+        type="file"
+        name="upload-avatar"
+        id="upload-avatar"
+        class="hidden"
+      />
+      <div
+        class="border-dashed border-4 border-gray-600 rounded-xl bg-opacity grid grid-cols-2 px-24 py-5 gap-3"
+      >
+        <img class="col-span-2 col-start-1 size-20 rounded-xl place-self-center" src="@/assets/images/image-avatar.jpg" alt="Imagem avatar" />
+        <button>Remove image</button>
+        <button>Change image</button>
+      </div>
+
       <label for="full-name">Full Name</label>
-      <input type="text" name="full-name" id="full-name">
-      
+      <input type="text" name="full-name" id="full-name" />
+
       <label for="email">Email Address</label>
-      <input type="email" name="email" id="email">
+      <input type="email" name="email" id="email" />
 
       <label for="github">Github Username</label>
-      <input type="text" name="github" id="github">
+      <input type="text" name="github" id="github" />
 
       <button class="mt-5" type="submit">Generate My Ticket</button>
     </form>
