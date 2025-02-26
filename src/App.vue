@@ -1,6 +1,6 @@
 <template>
   <div
-    class="static h-screen bg-img bg-no-repeat bg-center bg-[url(@/assets/images/background-desktop.png)]"
+    class="static h-full bg-img bg-no-repeat bg-center bg-[url(@/assets/images/background-desktop.png)]"
   >
     <img
       class="absolute top-0 right-0"
