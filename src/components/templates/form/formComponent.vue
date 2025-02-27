@@ -19,13 +19,13 @@
     </div>
 
     <label for="full-name">Full Name</label>
-    <input type="text" name="full-name" id="full-name" />
+    <input type="text" name="full-name" id="full-name" v-model="name"/>
 
     <label for="email">Email Address</label>
-    <input type="email" name="email" id="email" />
+    <input type="email" name="email" id="email" v-model="email"/>
 
     <label for="github">Github Username</label>
-    <input type="text" name="github" id="github" />
+    <input type="text" name="github" id="github" v-model="github"/>
 
     <button class="mt-5" type="submit">Generate My Ticket</button>
   </form>
