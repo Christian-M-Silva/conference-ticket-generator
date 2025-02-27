@@ -20,6 +20,13 @@ input[type="email"] {
     height: 2.9rem;
 }
 
+span {
+    color: yellow;
+    display: flex;
+    padding-top: .5rem;
+    gap: .3rem;
+}
+
 button {
     background-color: #FF6F61;
     color: hsl(248, 70%, 10%);

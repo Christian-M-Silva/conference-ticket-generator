@@ -19,13 +19,72 @@
     </div>
 
     <label for="full-name">Full Name</label>
-    <input type="text" name="full-name" id="full-name" v-model="name"/>
+    <input
+      type="text"
+      name="full-name"
+      id="full-name"
+      v-model="v$.name.$model"
+    />
+    <span v-for="error of v$.name.$errors" :key="error.$uid">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-5"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+        />
+      </svg>
+
+      {{ error.$message }}
+    </span>
 
     <label for="email">Email Address</label>
-    <input type="email" name="email" id="email" v-model="email"/>
+    <input type="email" name="email" id="email" v-model="v$.email.$model" />
+    <span v-for="error of v$.email.$errors" :key="error.$uid">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-5"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+        />
+      </svg>
+
+      {{ error.$message }}
+    </span>
 
     <label for="github">Github Username</label>
-    <input type="text" name="github" id="github" v-model="github"/>
+    <input type="text" name="github" id="github" v-model="v$.github.$model" />
+    <span v-for="error of v$.github.$errors" :key="error.$uid">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-5"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+        />
+      </svg>
+
+      {{ error.$message }}
+    </span>
 
     <button class="mt-5" type="submit">Generate My Ticket</button>
   </form>
