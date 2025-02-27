@@ -1,14 +1,14 @@
 <template>
   <div
-    class="static bg-img bg-no-repeat bg-center bg-[url(@/assets/images/background-desktop.png)]"
+    class="static min-h-screen bg-img bg-no-repeat bg-center bg-[url(@/assets/images/background-desktop.png)]"
   >
     <img
-      class="absolute top-0 right-0"
+      class="fixed top-0 right-0"
       src="@/assets/images/pattern-squiggly-line-top.svg"
       alt="Detalhe superior"
     />
     <img
-      class="absolute bottom-0 left-0"
+      class="fixed bottom-0 left-0 z-10"
       src="@/assets/images/pattern-squiggly-line-bottom.svg"
       alt="Detalhe inferior"
     />

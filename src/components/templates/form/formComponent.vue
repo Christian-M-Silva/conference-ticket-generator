@@ -1,5 +1,5 @@
 <template>
-  <form class="mt-11 mb-4 flex flex-col" action="">
+  <form class="mt-11 mb-4 flex flex-col z-20" action="">
     <label for="upload-avatar">Upload Avatar</label>
     <!-- Titulo do campo -->
     <input type="file" name="upload-avatar" id="upload-avatar" class="hidden" />
